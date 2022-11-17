@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <Nav justify="space-between" wrap="wrap">
       <Brand to="/">
-        <i>{"Shadys RECIPE"}</i>
-        <span>Recipe</span>
+        <i>{"Shady's    "}</i>
+        <span>   Recipe</span>
       </Brand>
 
       <Hamburger onClick={() => setIsOpen(!isOpen)}>
