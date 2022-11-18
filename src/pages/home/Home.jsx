@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Header from '../../components/header/Header';
 
 const Home = () => {
@@ -17,9 +17,9 @@ const Home = () => {
   }
   console.log(recipes);
 
-  useEffect(() => {
-    getData()
-  }, [])
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   return (
     <div>

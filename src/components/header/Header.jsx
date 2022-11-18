@@ -4,14 +4,18 @@ import { Button, FoodInput, FormContainer, HeaderContainer, MainHeader, Select }
 
 
 const Header = ({ setQuery, setSelectedMeal, mealType, getData }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getData()
+  }
+
   return (
     <HeaderContainer>
-      <MainHeader>
-        Recipe App
+      <MainHeader>Recipe App
       </MainHeader>
 
-      <FormContainer>
-        <FoodInput tyoe="text" placeholder='search'
+      <FormContainer onSubmit={handleSubmit}>
+        <FoodInput type="text" placeholder='search'
           onChange={(e) => setQuery(e.target.value)}
         />
         <Button type="submit">SEARCH</Button>
