@@ -1,10 +1,22 @@
 import React from 'react'
+import "./Header.style"
+import { Button, FoodInput, FormContainer, HeaderContainer, MainHeader } from './Header.style'
 
-const Header = () => {
+
+const Header = ({ setQuery }) => {
   return (
-    <div>
-      Header
-    </div>
+    <HeaderContainer>
+      <MainHeader>
+        Recipe App
+      </MainHeader>
+
+      <FormContainer>
+        <FoodInput tyoe="text" placeholder='search'
+          onChange={(e) => setQuery(e.target.value)}
+        />
+        <Button type="submit"></Button>
+      </FormContainer>
+    </HeaderContainer>
   )
 }
 
