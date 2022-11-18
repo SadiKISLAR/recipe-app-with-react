@@ -23,7 +23,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header setQuery={setQuery} setSelectedMeal={setSelectedMeal} />
+      <Header setQuery={setQuery} setSelectedMeal={setSelectedMeal} mealType={mealType} getData={getData} />
     </div>
   )
 }
