@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useState } from 'react'
+import Cards from '../../components/cards/Cards';
 import Header from '../../components/header/Header';
 
 const Home = () => {
@@ -11,9 +12,20 @@ const Home = () => {
   const mealType = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
 
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${selectedMeal}`;
+
   const getData = async () => {
-    const { data } = await axios(url)
-    setRecipes(data.hits)
+    if (query) {
+      try {
+        const { data } = await axios(url)
+        setRecipes(data.hits)
+      } catch (error) {
+        console.log(error)
+      }
+    } else {
+      alert("Please fill the Form")
+    }
+
+
   }
   console.log(recipes);
 
@@ -24,6 +36,7 @@ const Home = () => {
   return (
     <div>
       <Header setQuery={setQuery} setSelectedMeal={setSelectedMeal} mealType={mealType} getData={getData} />
+      <Cards />
     </div>
   )
 }
