@@ -46,7 +46,7 @@ const Detail = () => {
           ))}
         </OtherPart>
         <ImgContainer>
-          <img src={state.image} alt="default" />
+          <img src={state.image} alt="" />
         </ImgContainer>
 
         <IngContainer>
