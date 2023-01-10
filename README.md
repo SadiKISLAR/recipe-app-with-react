@@ -7,4 +7,5 @@
 - SASS
 
 
-![0QlGSWoj0i-min](https://user-images.githubusercontent.com/108137435/211641228-88fe6ea3-2165-4081-bf47-98b531e9bbb8.gif)
+![KTHCjoznUn-min](https://user-images.githubusercontent.com/108137435/211644089-771b3d1d-335d-48a2-8f85-f4037729de38.gif)
+
