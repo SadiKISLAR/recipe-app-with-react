@@ -6,5 +6,5 @@
 - ReactJS
 - SASS
 
-![xTEMr1POqh-min](https://user-images.githubusercontent.com/0QlGSWoj0i-min.gif)
+![xTEMr1POqh-min](https://user-images.githubusercontent.com/108137435/211585264-2c39aaee-1397-4fc0-bbc0-0QlGSWoj0i-min.gif)
 
